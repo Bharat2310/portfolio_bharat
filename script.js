@@ -6,14 +6,14 @@ document.addEventListener("DOMContentLoaded", () => {
     const isDark = body.classList.contains("body-dark");
 
     if (isDark) {
-      // Switch to Light Mode
+      
       body.classList.remove("body-dark");
       body.classList.add("body-white");
 
-      toggleBtn.id = "toggleThemeBtn"; // change style
+      toggleBtn.id = "toggleThemeBtn"; 
       toggleBtn.textContent = "Switch to Dark Mode";
 
-      // Change dark class elements to light equivalents
+      
       document.querySelectorAll(".id-dark").forEach(el => {
         el.classList.remove("id-dark");
         el.classList.add("id");
@@ -39,14 +39,14 @@ document.addEventListener("DOMContentLoaded", () => {
         el.classList.add("contact-item");
       });
     } else {
-      // Switch to Dark Mode
+      
       body.classList.remove("body-white");
       body.classList.add("body-dark");
 
-      toggleBtn.id = "toggleThemeBtn-dark"; // change style
+      toggleBtn.id = "toggleThemeBtn-dark"; 
       toggleBtn.textContent = "Switch to Light Mode";
 
-      // Change light class elements to dark equivalents
+     
       document.querySelectorAll(".id").forEach(el => {
         el.classList.remove("id");
         el.classList.add("id-dark");
