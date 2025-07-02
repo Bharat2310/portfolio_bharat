@@ -65,4 +65,23 @@ document.addEventListener("DOMContentLoaded", () => {
       });
     }
   });
+}
+);
+document.getElementById("contactForm").addEventListener("submit", function (e) {
+  e.preventDefault();
+  const name = document.getElementById("name").value.trim();
+  const email = document.getElementById("email").value.trim();
+  const message = document.getElementById("message").value.trim();
+  const msgElement = document.getElementById("formMessage");
+
+  if (!name || !email || !message) {
+    msgElement.textContent = "Please fill out all fields.";
+    msgElement.style.color = "red";
+  } else {
+    msgElement.textContent = "Message seent.";
+    msgElement.style.color = "green";
+    this.reset();
+  }
 });
+
+

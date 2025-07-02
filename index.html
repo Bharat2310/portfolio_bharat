@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body class="body-dark">
+  <button id="toggleThemeBtn-dark">Switch to Light</button>
   <div class="container">
     <div class="header">
       <img src="photo.png" alt="Profile" class="profile-pic">
@@ -18,7 +19,7 @@
       </div>
     </div>
     <div class="about-dark">
-      I am a junior <b>Web Developer</b> and <b>UI/UX designer</b> passionate about creating intuitive, user-friendly digital experiences. With a keen eye for design and a growing skill set in web development, I enjoy exploring new tools and resources to build engaging projects that blend form and function.
+      I am a junior <b>Web Developer</b> , <b>UI/UX designer</b> and <b>Webflow Developer</b> passionate about creating intuitive, user-friendly digital experiences. With a keen eye for design and a growing skill set in web development, I enjoy exploring new tools and resources to build engaging projects that blend form and function.
     </div>
     <div class="section-title">PROJECTS</div>
     <div class="projects-list">
@@ -68,13 +69,22 @@
     </li>
   </ul>
  </div>
- <button id="toggleThemeBtn-dark">Toggle Theme</button>
- <script src="script.js"></script>
+ 
+ <form id="contactForm">
+  <input type="text" id="name" placeholder="Your Name" required>
+  <input type="email" id="email" placeholder="Your Email" required>
+  <textarea id="message" placeholder="Your Message" required></textarea>
+  <button type="submit">Send</button>
+</form>
+<p id="formMessage"></p>
+ 
  <footer>
   <div class="footer-content">
     <p>&copy; 2024 Bharat Aggarwal. All rights reserved.</p>
     <p>Designed and Developed by Bharat Aggarwal</p>
   </div>
  </footer>
+ <script src="script.js"></script>
+
 </body>
 </html>
