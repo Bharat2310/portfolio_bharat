@@ -6,14 +6,10 @@ document.addEventListener("DOMContentLoaded", () => {
     const isDark = body.classList.contains("body-dark");
 
     if (isDark) {
-      
       body.classList.remove("body-dark");
       body.classList.add("body-white");
-
       toggleBtn.id = "toggleThemeBtn"; 
       toggleBtn.textContent = "Switch to Dark Mode";
-
-      
       document.querySelectorAll(".id-dark").forEach(el => {
         el.classList.remove("id-dark");
         el.classList.add("id");
@@ -39,14 +35,10 @@ document.addEventListener("DOMContentLoaded", () => {
         el.classList.add("contact-item");
       });
     } else {
-      
       body.classList.remove("body-white");
       body.classList.add("body-dark");
-
       toggleBtn.id = "toggleThemeBtn-dark"; 
       toggleBtn.textContent = "Switch to Light Mode";
-
-     
       document.querySelectorAll(".id").forEach(el => {
         el.classList.remove("id");
         el.classList.add("id-dark");
